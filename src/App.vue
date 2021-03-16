@@ -34,14 +34,14 @@ export default {
         }
     },
     async created () {
-        this.css = {
-            backgroundColor: '#323232',
-            backgroundImage: `url('${require('@/assets/bg.webp')}')`,
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundAttachment: 'fixed'
-        }
+        // this.css = {
+        //     backgroundColor: '#323232',
+        //     backgroundImage: `url('${require('@/assets/bg.webp')}')`,
+        //     backgroundPosition: 'center center',
+        //     backgroundRepeat: 'no-repeat',
+        //     backgroundSize: 'cover',
+        //     backgroundAttachment: 'fixed'
+        // }
     },
     methods: {
         ...mapActions({
