@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended"
+  ],
+  "plugins": [
+    "import",
+    "vue"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "semi": [
+      "error",
+      "never"
+    ],
+    "vue/comment-directive": "off"
+  }
+}

@@ -1,63 +1,48 @@
 <template>
-  <v-app
-    id="app"
-    :style="css"
-  >
+  <v-app>
+    <header>
+      <Header />
+    </header>
+
     <v-main>
       <router-view />
     </v-main>
   </v-app>
-  <!-- <div id="app">
-    <router-view />
-  </div> -->
 </template>
 
 <script>
 
 import { mapState, mapGetters, mapActions } from 'vuex'
+import Header from './components/Header.vue'
 
 export default {
-    name: 'App',
-    computed: {
-        ...mapState({
-        }),
-        ...mapGetters({
-        })
-    },
-    // eslint-disable-next-line vue/order-in-components
-    data () {
-        return {
-            itemmenu: [],
-            MenuVal: {},
-            isProcess: false,
-            css: {}
-        }
-    },
-    async created () {
-        // this.css = {
-        //     backgroundColor: '#323232',
-        //     backgroundImage: `url('${require('@/assets/bg.webp')}')`,
-        //     backgroundPosition: 'center center',
-        //     backgroundRepeat: 'no-repeat',
-        //     backgroundSize: 'cover',
-        //     backgroundAttachment: 'fixed'
-        // }
-    },
-    methods: {
-        ...mapActions({
-        })
+  name: 'App',
+  components: {
+    Header,
+  },
+  data() {
+    return {
     }
+  },
+  computed: {
+    ...mapState({
+    }),
+    ...mapGetters({
+    }),
+  },
+  methods: {
+    ...mapActions({
+    }),
+  },
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  font-family: 'Kanit', sans-serif;
+  box-sizing: border-box;
 }
+
 #nav {
   padding: 30px;
   a {
